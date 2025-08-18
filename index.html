@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Descargar UmaerApp (APK)</title>
+  <meta name="description" content="Descarga segura del APK de UmaerApp" />
+  <style>
+    :root{
+      --primary:#1565C0; --primary-2:#0D47A1; --bg:#E3F2FD; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    header{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;padding:32px 16px;text-align:center}
+    header h1{margin:0 0 6px 0;font-size:28px}
+    header p{margin:0;opacity:.9}
+    main{max-width:860px;margin:0 auto;padding:20px}
+    .card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 8px 24px rgba(13,71,161,.12)}
+    .row{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:720px){.row{grid-template-columns:1.2fr .8fr}}
+    .btn{display:inline-block;padding:14px 18px;border-radius:12px;border:none;background:var(--primary);color:#fff;text-decoration:none;font-weight:600;cursor:pointer}
+    .btn:hover{background:var(--primary-2)}
+    .muted{color:var(--muted);font-size:.95rem}
+    .list{margin:0;padding-left:18px}
+    code{background:#f1f5f9;padding:2px 6px;border-radius:6px}
+    .apk-meta{display:grid;grid-template-columns:1fr;gap:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Descargar UmaerApp</h1>
+    <p>Instala la versión más reciente en tu dispositivo Android</p>
+  </header>
+
+  <main>
+    <div class="card row">
+      <section>
+        <h2>Versión disponible</h2>
+        <p><strong>UmaerApp 1.0.0</strong> · Actualizada: <span id="date">2025-08-13</span></p>
+        <p class="muted">Requiere Android 7.0 (API 24) o superior.</p>
+
+        <!-- 🔁 Ajusta el nombre del archivo si es distinto -->
+        <p><a class="btn" href="UmaerApp.apk" download>📲 Descargar APK</a></p>
+
+        <div class="apk-meta">
+          <p class="muted">Si el navegador te advierte sobre “orígenes desconocidos”, acepta la instalación (Ajustes → Seguridad → Instalar apps desconocidas).</p>
+          <p class="muted">Para actualizaciones, vuelve a esta página y descarga la nueva versión: se instalará sobre la anterior si el identificador es el mismo.</p>
+        </div>
+      </section>
+
+      <aside>
+        <h3>Verificación opcional</h3>
+        <p class="muted">Para verificar la integridad del archivo, puedes calcular el hash SHA-256:</p>
+        <ul class="list muted">
+          <li><strong>Windows (PowerShell):</strong> <code>Get-FileHash .\UmaerApp.apk -Algorithm SHA256</code></li>
+          <li><strong>macOS / Linux:</strong> <code>shasum -a 256 UmaerApp.apk</code></li>
+        </ul>
+        <p class="muted">Compara el resultado con el que publiques aquí cuando generes el APK.</p>
+      </aside>
+    </div>
+
+    <p class="muted" style="margin-top:18px">
+      ¿Problemas con la descarga? Mantén pulsado el botón y elige “Descargar enlace” o abre esta página en otro navegador (Chrome/Edge).
+    </p>
+  </main>
+</body>
+</html>
